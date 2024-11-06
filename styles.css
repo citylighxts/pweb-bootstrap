@@ -1,0 +1,98 @@
+body {
+    font-family: 'Poppins';
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a7097a, #5e0745);
+    padding: 40px 20px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+.form-container h2 {
+    color: #a7097a;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-label {
+    font-weight: 500;
+    color: #333;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #a7097a;
+    box-shadow: 0 0 0 0.25rem rgba(167, 9, 122, 0.25);
+}
+
+.btn-primary {
+    background-color: #a7097a;
+    border-color: #a7097a;
+    padding: 0.75rem;
+    font-weight: 600;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #8a0865;
+    border-color: #8a0865;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.country-code {
+    width: 120px;
+}
+
+.select-box {
+    position: relative;
+    width: 100%;
+}
+
+.selected-option {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.selected-option .form-control {
+    width: 80%;
+    right: 1;
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+}
+
+.options.active {
+    display: block;
+}
+
+.search-box {
+    padding: 10px;
+}
+
+.list-unstyled li:hover {
+    background-color: #f0f0f0;
+}
+
+.selected-country-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
